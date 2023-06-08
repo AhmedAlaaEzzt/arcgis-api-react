@@ -4,7 +4,7 @@ import "./App.css";
 
 
 function App() {
- return <MapView />
+ return <MapView basemap="satellite" zoom="13"/>
 
 }
 

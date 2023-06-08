@@ -3,12 +3,13 @@ import { createMapView } from "../../arcgis-map";
 
 import './styles.css';
 
-const MapView = () =>{
+const MapView = (props) =>{
+    const {basemap, zoom} = props;
     const mapRef = useRef();
  
     useEffect(() => {
 
-        const view = createMapView(mapRef.current);
+        const view = createMapView(mapRef.current, basemap, zoom);
         return () => { view && view.destroy();};
   
     }, []);
