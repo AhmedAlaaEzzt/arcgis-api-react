@@ -1,15 +1,10 @@
 import DropdownSelector from './components/DropdownSelector';
 import MapView from './components/MapView';
 
-
+import {basemaps} from './data';
 import "./App.css";
 
-const basemaps = [
-    { value: 'satellite', label: 'Satellite' },
-    { value: 'hybrid', label: 'Hybrid' },
-    { value: 'osm', label: 'Open Street Map' },
-    { value: 'dark-gray-vector', label: 'Dark Gray Vector' },
-];
+
 
 function App() {
  return <div className='position-relative'>
